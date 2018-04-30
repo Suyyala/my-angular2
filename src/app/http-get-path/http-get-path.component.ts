@@ -1,14 +1,16 @@
+import { MaterialsModule } from './../materials.module';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-http-get-path',
   template: `
-    <ul>
-    <li *ngFor='let post of posts' (click)='showPost(post.id)'>
+    <mat-list>
+    <mat-list-item *ngFor='let post of posts' (click)='showPost(post.id)'>
     {{post.title}}
-    </li>
-    <ul>
+    </mat-list-item>
+    <mat-list>
     {{post | json}}
   `,
   styles: []

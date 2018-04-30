@@ -1,3 +1,5 @@
+import { Routes } from '@angular/router';
+import { appRoutes } from './app-routing.module';
 
 
 import { Component, OnInit } from '@angular/core';
@@ -5,17 +7,14 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <a routerLink='http-get'>http-get</a>
-    <a routerLink='http-get-what'>http-get-what</a>
-    <a routerLink='http-get-path'>http-get-path</a>
-    <router-outlet></router-outlet>
-  `,
-  styles: []
+  templateUrl: './app.component.template.html',
+  styleUrls: ['./app.component.styles.css']
 })
 export class AppComponent implements OnInit {
   title = 'app';
+  appRoutes = [];
   constructor() {}
   ngOnInit() {
+    this.appRoutes = appRoutes ;
   }
 }

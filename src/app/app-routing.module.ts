@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
+import { METHODS } from 'http';
 
 
 
-const appRoutes: Routes = [
+export const  appRoutes: Routes = [
   // {path : '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'http-get', component: HttpGetComponent},
   {path: 'http-get-what', component: HttpGetWhatComponent},
@@ -26,4 +27,5 @@ const appRoutes: Routes = [
   ],
   declarations: []
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

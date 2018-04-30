@@ -1,8 +1,8 @@
+import { MaterialsModule } from './materials.module';
 import { HttpGetPathComponent } from './http-get-path/http-get-path.component';
 import { SwaggerService } from './http-get/swagger.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,10 +18,11 @@ import {FormsModule} from '@angular/forms';
     AppComponent,
     HttpGetComponent,
     HttpGetWhatComponent,
-    HttpGetPathComponent
+    HttpGetPathComponent,
   ],
   imports: [
     BrowserModule,
+    MaterialsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <span>{{title}}</span>
+  
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+   <button class="mat-button">New</button>
+   <button class="mat-button">New</button>
+   <button class="mat-button">New</button>
+   <ul>
+       <li routerLinks={{link.path}} *ngFor='let link of appRoutes'>
+           {{link.path}}
+       </li>
+   </ul>
+  </mat-toolbar>
